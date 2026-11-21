@@ -1,0 +1,11 @@
+.git
+.env
+data
+**/node_modules
+**/dist
+**/.venv
+**/__pycache__
+**/.pytest_cache
+dhanwanthari-server/data
+dhanwanthari-server/frontend
+dhanwanthari-server/tests

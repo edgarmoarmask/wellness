@@ -1,0 +1,29 @@
+# Run from the project root:   cp .env.example .env   (edit it)   then   docker compose up -d --build
+# → https://$DOMAIN  (Caddy gets the HTTPS certificate automatically). The app listens on 8080 inside the network.
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dhanwanthari-server/Dockerfile
+    env_file: .env
+    environment:
+      FORWARDED_ALLOW_IPS: "*"        # requests arrive through Caddy on the private compose network
+    volumes:
+      - ./data:/app/data              # clinic.db + backups — back this folder up
+    expose: ["8080"]
+    # ports: ["127.0.0.1:8080:8080"]  # uncomment to reach the app directly on the host (no Caddy)
+    restart: unless-stopped
+
+  caddy:
+    image: caddy:2
+    depends_on: [app]
+    ports: ["80:80", "443:443"]
+    environment:
+      DOMAIN: ${DOMAIN}
+    volumes:
+      - ./dhanwanthari-server/deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+    restart: unless-stopped
+
+volumes:
+  caddy_data:

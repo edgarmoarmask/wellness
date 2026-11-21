@@ -1,0 +1,953 @@
+{
+ "CLINIC": {
+  "name": "Dhanwanthari Vilasam Ayurveda Vaidyasala",
+  "short": "Dhanwanthari Vilasam",
+  "since": 1957,
+  "location": "Brickfields, Kuala Lumpur",
+  "address": "No. 241, First Floor, Jalan Tun Sambanthan, Brickfields, 50470 Kuala Lumpur",
+  "whatsapp": "011-3342 3455",
+  "phone": "03-8922 3455",
+  "email": "ayurvedabrickfieldskl@gmail.com",
+  "currency": "RM"
+ },
+ "UNITS": [
+  {
+   "id": "opd",
+   "type": "consult",
+   "name": {
+    "en": "Vaidya consultation (OPD)",
+    "ms": "Konsultasi Vaidya (OPD)"
+   },
+   "short": {
+    "en": "Consultation",
+    "ms": "Konsultasi"
+   }
+  },
+  {
+   "id": "tx",
+   "type": "therapy",
+   "name": {
+    "en": "Panchakarma & therapy",
+    "ms": "Panchakarma & terapi"
+   },
+   "short": {
+    "en": "Therapy",
+    "ms": "Terapi"
+   }
+  }
+ ],
+ "PRACTITIONERS": {
+  "opd": [
+   {
+    "id": "d1",
+    "name": "Dr. Ramesh Nair (BAMS)",
+    "role": "vaidya"
+   },
+   {
+    "id": "d2",
+    "name": "Dr. Lakshmi Menon (BAMS)",
+    "role": "vaidya"
+   }
+  ],
+  "tx": [
+   {
+    "id": "t1",
+    "name": "Kavitha (therapist)",
+    "role": "therapist"
+   },
+   {
+    "id": "t2",
+    "name": "Suresh (therapist)",
+    "role": "therapist"
+   },
+   {
+    "id": "t3",
+    "name": "Anitha (therapist)",
+    "role": "therapist"
+   }
+  ]
+ },
+ "SERVICES": {
+  "consult": [
+   {
+    "id": "cons",
+    "name": {
+     "en": "Vaidya consultation (Nadi pariksha)",
+     "ms": "Konsultasi Vaidya (Nadi pariksha)"
+    },
+    "price": 80,
+    "mins": 30
+   },
+   {
+    "id": "fup",
+    "name": {
+     "en": "Follow-up consultation",
+     "ms": "Konsultasi susulan"
+    },
+    "price": 50,
+    "mins": 20
+   },
+   {
+    "id": "prak",
+    "name": {
+     "en": "Prakriti (body-type) assessment",
+     "ms": "Penilaian Prakriti (jenis badan)"
+    },
+    "price": 120,
+    "mins": 45
+   }
+  ],
+  "therapy": [
+   {
+    "id": "abhy",
+    "group": "Wellness offer",
+    "name": {
+     "en": "Abhyangam (herbal oil therapy)",
+     "ms": "Abhyangam (terapi minyak herba)"
+    },
+    "mins": 60,
+    "price": 110,
+    "normal": 130,
+    "label": "promo",
+    "wellness": true
+   },
+   {
+    "id": "oilm",
+    "group": "Wellness offer",
+    "name": {
+     "en": "Full body medicated warm oil massage (head to toe)",
+     "ms": "Urutan minyak ubat suam seluruh badan (kepala hingga kaki)"
+    },
+    "mins": 60,
+    "price": 130,
+    "normal": 160,
+    "label": "member",
+    "wellness": true
+   },
+   {
+    "id": "kizhi",
+    "group": "Wellness offer",
+    "name": {
+     "en": "Abhyangam + hot poultice (Kizhi) therapy",
+     "ms": "Abhyangam + terapi tuam panas (Kizhi)"
+    },
+    "mins": 60,
+    "price": 130,
+    "normal": 150,
+    "label": "special",
+    "wellness": true
+   },
+   {
+    "id": "swed",
+    "group": "Wellness offer",
+    "name": {
+     "en": "Full body medicated oil massage + herbal sudation (Swedana)",
+     "ms": "Urutan minyak ubat seluruh badan + wap herba (Swedana)"
+    },
+    "mins": 90,
+    "price": 150,
+    "normal": 190,
+    "label": "member",
+    "wellness": true
+   },
+   {
+    "id": "destress",
+    "group": "Wellness offer",
+    "name": {
+     "en": "De-Stress therapy (with Shirodhara)",
+     "ms": "Terapi Nyah-Tekanan (dengan Shirodhara)"
+    },
+    "mins": 90,
+    "price": 190,
+    "normal": 250,
+    "label": "member",
+    "wellness": true
+   },
+   {
+    "id": "ab",
+    "code": "AB",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + face massage + head massage (full body herbal oil massage)",
+     "ms": "Abhyangam + face massage + head massage (full body herbal oil massage)"
+    },
+    "mins": 60,
+    "price": 100
+   },
+   {
+    "id": "ab-stb",
+    "code": "AB STB",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + face massage + head massage + steam bath",
+     "ms": "Abhyangam + face massage + head massage + steam bath"
+    },
+    "mins": 75,
+    "price": 120
+   },
+   {
+    "id": "ab-pk",
+    "code": "AB PK",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + Podi Kizhi + hot water bath",
+     "ms": "Abhyangam + Podi Kizhi + hot water bath"
+    },
+    "mins": 60,
+    "price": 100
+   },
+   {
+    "id": "ab-pk1",
+    "code": "AB PK1",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + Podi Kizhi + hot water bath (90 min)",
+     "ms": "Abhyangam + Podi Kizhi + hot water bath (90 min)"
+    },
+    "mins": 90,
+    "price": 150
+   },
+   {
+    "id": "sd",
+    "code": "SD",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Shirodhara",
+     "ms": "Shirodhara"
+    },
+    "mins": 60,
+    "price": 120
+   },
+   {
+    "id": "absd",
+    "code": "ABSD",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + Shirodhara",
+     "ms": "Abhyangam + Shirodhara"
+    },
+    "mins": 90,
+    "price": 220
+   },
+   {
+    "id": "abpksd",
+    "code": "ABPKSD",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + Kizhi + Shirodhara",
+     "ms": "Abhyangam + Kizhi + Shirodhara"
+    },
+    "mins": 120,
+    "price": 250
+   },
+   {
+    "id": "ud",
+    "code": "UD",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam + Udwartanam",
+     "ms": "Abhyangam + Udwartanam"
+    },
+    "mins": 60,
+    "price": 130
+   },
+   {
+    "id": "pk-d",
+    "code": "PK D",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Podikizhi (dry, without oil)",
+     "ms": "Podikizhi (dry, without oil)"
+    },
+    "mins": 60,
+    "price": 100
+   },
+   {
+    "id": "ek",
+    "code": "EK",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Elakizhi",
+     "ms": "Elakizhi"
+    },
+    "mins": 60,
+    "price": 130
+   },
+   {
+    "id": "nv",
+    "code": "NV",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Naranga Kizhi",
+     "ms": "Naranga Kizhi"
+    },
+    "mins": 60,
+    "price": 130
+   },
+   {
+    "id": "abnav",
+    "code": "ABNAV",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Abhyangam (10 min) + Navara Kizhi (50 min)",
+     "ms": "Abhyangam (10 min) + Navara Kizhi (50 min)"
+    },
+    "mins": 60,
+    "price": 130
+   },
+   {
+    "id": "piz",
+    "code": "PIZ",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Pizhichil",
+     "ms": "Pizhichil"
+    },
+    "mins": 60,
+    "price": 200
+   },
+   {
+    "id": "pdm",
+    "code": "PDM",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Post delivery massage (maternal)",
+     "ms": "Post delivery massage (maternal)"
+    },
+    "mins": 60,
+    "price": 120
+   },
+   {
+    "id": "fm",
+    "code": "FM",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Face massage",
+     "ms": "Face massage"
+    },
+    "mins": 30,
+    "price": 60
+   },
+   {
+    "id": "ftm",
+    "code": "FTM",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Foot massage",
+     "ms": "Foot massage"
+    },
+    "mins": 30,
+    "price": 60
+   },
+   {
+    "id": "hdm",
+    "code": "HDM",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Head massage",
+     "ms": "Head massage"
+    },
+    "mins": 30,
+    "price": 60
+   },
+   {
+    "id": "lom",
+    "code": "LOM",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Local massage",
+     "ms": "Local massage"
+    },
+    "mins": 30,
+    "price": 60
+   },
+   {
+    "id": "ktv",
+    "code": "KTV",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Kati Vasti",
+     "ms": "Kati Vasti"
+    },
+    "mins": 30,
+    "price": 120
+   },
+   {
+    "id": "kv",
+    "code": "KV",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Kashaya Vasti",
+     "ms": "Kashaya Vasti"
+    },
+    "mins": 120,
+    "price": 150
+   },
+   {
+    "id": "ksd",
+    "code": "KSD",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Kashaya Dhara",
+     "ms": "Kashaya Dhara"
+    },
+    "mins": 60,
+    "price": 100
+   },
+   {
+    "id": "piu",
+    "code": "PIU",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Pichu",
+     "ms": "Pichu"
+    },
+    "mins": 30,
+    "price": 70
+   },
+   {
+    "id": "nas",
+    "code": "NAS",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Nasyam",
+     "ms": "Nasyam"
+    },
+    "mins": 30,
+    "price": 70
+   },
+   {
+    "id": "shl",
+    "code": "SHL",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Shirolepam",
+     "ms": "Shirolepam"
+    },
+    "mins": 30,
+    "price": 80
+   },
+   {
+    "id": "shv",
+    "code": "SHV",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Shirovasti",
+     "ms": "Shirovasti"
+    },
+    "mins": 30,
+    "price": 130
+   },
+   {
+    "id": "lep",
+    "code": "LEP",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Lepanam",
+     "ms": "Lepanam"
+    },
+    "mins": 30,
+    "price": 70
+   },
+   {
+    "id": "ban",
+    "code": "BAN",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Bandanam",
+     "ms": "Bandanam"
+    },
+    "mins": 30,
+    "price": 70
+   },
+   {
+    "id": "nt",
+    "code": "NT",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Netra Tarpanam",
+     "ms": "Netra Tarpanam"
+    },
+    "mins": 30,
+    "price": 150
+   },
+   {
+    "id": "ft",
+    "code": "FT",
+    "group": "Walk-in treatment",
+    "name": {
+     "en": "Facial therapy",
+     "ms": "Facial therapy"
+    },
+    "mins": 60,
+    "price": 150
+   }
+  ]
+ },
+ "PACKAGES": [
+  {
+   "id": "pk7",
+   "name": {
+    "en": "Panchakarma detox, 7 days",
+    "ms": "Detoks Panchakarma, 7 hari"
+   },
+   "sessions": 7,
+   "price": 2800,
+   "items": []
+  },
+  {
+   "id": "pk14",
+   "name": {
+    "en": "Panchakarma programme, 14 days",
+    "ms": "Program Panchakarma, 14 hari"
+   },
+   "sessions": 14,
+   "price": 5200,
+   "items": []
+  },
+  {
+   "id": "sh5",
+   "name": {
+    "en": "Shirodhara, 5 sessions",
+    "ms": "Shirodhara, 5 sesi"
+   },
+   "sessions": 5,
+   "price": 990,
+   "items": [
+    {
+     "svc": "sd",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "kb6",
+   "name": {
+    "en": "Kati basti for back pain, 6 sessions",
+    "ms": "Kati basti untuk sakit belakang, 6 sesi"
+   },
+   "sessions": 6,
+   "price": 820,
+   "items": [
+    {
+     "svc": "ktv",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "ab10",
+   "name": {
+    "en": "Abhyanga, 10 sessions",
+    "ms": "Abhyanga, 10 sesi"
+   },
+   "sessions": 10,
+   "price": 1350,
+   "items": [
+    {
+     "svc": "ab",
+     "n": 10
+    }
+   ]
+  },
+  {
+   "id": "plan1",
+   "code": "PLAN 1",
+   "name": {
+    "en": "Introductory Plan (Consultation & Dietary Program)",
+    "ms": "Introductory Plan (Consultation & Dietary Program)"
+   },
+   "items": [],
+   "sessions": 4,
+   "price": 399,
+   "duration": "3 weeks",
+   "validityMonths": 3,
+   "inclusions": [
+    "One time Ayurvedic consultation with Nadi pareeksha",
+    "General Body Therapies",
+    "Major - 3",
+    "Minor - 1",
+    "Dietary Advice"
+   ]
+  },
+  {
+   "id": "plan2",
+   "code": "PLAN 2",
+   "name": {
+    "en": "Spine Correction Program",
+    "ms": "Spine Correction Program"
+   },
+   "items": [],
+   "sessions": 7,
+   "price": 999,
+   "duration": "4 weeks",
+   "validityMonths": 6,
+   "inclusions": [
+    "Three Ayurvedic consultation with Nadi pareeksha",
+    "Exercise and posture correction",
+    "Work life balance guidance",
+    "Physiotherapy Support"
+   ]
+  },
+  {
+   "id": "plan3",
+   "code": "PLAN 3",
+   "name": {
+    "en": "Immunity Booster / Obesity Management Program",
+    "ms": "Immunity Booster / Obesity Management Program"
+   },
+   "items": [],
+   "sessions": 12,
+   "price": 1499,
+   "duration": "8 weeks",
+   "validityMonths": 6,
+   "inclusions": [
+    "Panchakarma Detox Therapy",
+    "Gut restoration Therapy",
+    "Yoga and meditation",
+    "Dietary Advice"
+   ]
+  },
+  {
+   "id": "plan4",
+   "code": "PLAN 4",
+   "name": {
+    "en": "Personalized Full Body Detox Program",
+    "ms": "Personalized Full Body Detox Program"
+   },
+   "items": [],
+   "sessions": 21,
+   "price": 2499,
+   "duration": "1 month",
+   "validityMonths": 12,
+   "inclusions": [
+    "Panchakarma Detox Therapies (Complete Body Cleansing)",
+    "6 complementary consultations",
+    "Specialized Cleansing Therapies (1-3 adults)",
+    "Dietary Advice"
+   ]
+  },
+  {
+   "id": "plan5",
+   "code": "PLAN 5",
+   "name": {
+    "en": "Couple Infertility / Pre and Post Natal / Wellness Program",
+    "ms": "Couple Infertility / Pre and Post Natal / Wellness Program"
+   },
+   "items": [],
+   "sessions": 14,
+   "price": 1999,
+   "duration": "Up to 6 months",
+   "validityMonths": 12,
+   "inclusions": [
+    "Pre and Post Natal Care",
+    "Body Hormone Management",
+    "Sexual Disabilities Management",
+    "Family counselling",
+    "Yoga and Meditation"
+   ]
+  }
+ ],
+ "WELLNESS": [
+  {
+   "id": "abhy",
+   "name": {
+    "en": "Abhyangam (herbal oil therapy)",
+    "ms": "Abhyangam (terapi minyak herba)"
+   },
+   "mins": null,
+   "price": 110,
+   "normal": 130,
+   "label": "promo",
+   "benefits": {
+    "en": "Herbal oil massage. Relieves stress and tension, improves circulation, restores vitality.",
+    "ms": "Urutan minyak herba. Melegakan tekanan dan ketegangan, melancarkan peredaran darah, memulihkan tenaga."
+   },
+   "check": {
+    "en": "Same treatment type as the 60-min warm oil massage at a different price. Duration not stated.",
+    "ms": "Jenis rawatan sama dengan urutan minyak 60 min pada harga berbeza. Tempoh tidak dinyatakan."
+   }
+  },
+  {
+   "id": "oilm",
+   "name": {
+    "en": "Full body medicated warm oil massage (head to toe)",
+    "ms": "Urutan minyak ubat suam seluruh badan (kepala hingga kaki)"
+   },
+   "mins": 60,
+   "price": 130,
+   "normal": 160,
+   "label": "member",
+   "benefits": {
+    "en": "Relieves muscle stiffness and body pain; muscle tone and flexibility, circulation, skin glow, stress, sleep, immunity.",
+    "ms": "Melegakan kekejangan otot dan sakit badan; kelenturan otot, peredaran darah, kulit berseri, tekanan, tidur, imuniti."
+   }
+  },
+  {
+   "id": "kizhi",
+   "name": {
+    "en": "Abhyangam + hot poultice (Kizhi) therapy",
+    "ms": "Abhyangam + terapi tuam panas (Kizhi)"
+   },
+   "mins": null,
+   "price": 130,
+   "normal": 150,
+   "label": "special",
+   "benefits": {
+    "en": "Oil massage with a warm herbal poultice.",
+    "ms": "Urutan minyak dengan tuam herba panas."
+   },
+   "check": {
+    "en": "Normal price RM150 is below the plain 60-min oil massage (RM160). Duration not stated.",
+    "ms": "Harga biasa RM150 lebih rendah daripada urutan minyak 60 min (RM160). Tempoh tidak dinyatakan."
+   }
+  },
+  {
+   "id": "swed",
+   "name": {
+    "en": "Full body medicated oil massage + herbal sudation (Swedana)",
+    "ms": "Urutan minyak ubat seluruh badan + wap herba (Swedana)"
+   },
+   "mins": 90,
+   "price": 150,
+   "normal": 190,
+   "label": "member",
+   "advance": true,
+   "benefits": {
+    "en": "Warm medicated oil massage, herbal steam, deep muscle relaxation, detox and circulation. For back pain, stress, poor sleep.",
+    "ms": "Urutan minyak ubat suam, wap herba, relaksasi otot, detoks dan peredaran darah. Untuk sakit belakang, tekanan, kurang tidur."
+   }
+  },
+  {
+   "id": "destress",
+   "name": {
+    "en": "De-Stress therapy (with Shirodhara)",
+    "ms": "Terapi Nyah-Tekanan (dengan Shirodhara)"
+   },
+   "mins": 90,
+   "price": 190,
+   "normal": 250,
+   "label": "member",
+   "benefits": {
+    "en": "Full body warm medicated oil massage + Shirodhara + herbal scrub and bath. Calms the mind; helps concentration, stress, headache, sleep.",
+    "ms": "Urutan minyak ubat suam seluruh badan + Shirodhara + scrub dan mandian herba. Menenangkan minda; membantu tumpuan, tekanan, sakit kepala, tidur."
+   },
+   "check": {
+    "en": "One poster shows RM220 member price; one Shirodhara poster has no name. Confirm RM190.",
+    "ms": "Satu poster menunjukkan RM220; satu poster Shirodhara tiada nama. Sahkan RM190."
+   }
+  }
+ ],
+ "PAYMENT_POLICY": {
+  "minDepositPct": 30,
+  "unlockBy": "paid",
+  "balanceDueDays": 30
+ },
+ "ROOMS": [
+  {
+   "id": "C1",
+   "name": {
+    "en": "Consult room 1",
+    "ms": "Bilik konsultasi 1"
+   }
+  },
+  {
+   "id": "C2",
+   "name": {
+    "en": "Consult room 2",
+    "ms": "Bilik konsultasi 2"
+   }
+  },
+  {
+   "id": "R1",
+   "name": {
+    "en": "Therapy room 1 (Droni)",
+    "ms": "Bilik terapi 1 (Droni)"
+   }
+  },
+  {
+   "id": "R2",
+   "name": {
+    "en": "Therapy room 2 (Droni)",
+    "ms": "Bilik terapi 2 (Droni)"
+   }
+  },
+  {
+   "id": "R3",
+   "name": {
+    "en": "Shirodhara room",
+    "ms": "Bilik Shirodhara"
+   }
+  }
+ ],
+ "INVENTORY": [
+  {
+   "id": "m1",
+   "name": "Dhanwantharam Thailam 200ml",
+   "form": "thailam",
+   "unit": "bottle",
+   "stock": 26,
+   "reorder": 15,
+   "price": 38,
+   "cost": 20.9,
+   "batch": "DT2508",
+   "exp": "2028-01-03",
+   "base": "sesame",
+   "use": "both"
+  },
+  {
+   "id": "m2",
+   "name": "Mahanarayana Thailam 200ml",
+   "form": "thailam",
+   "unit": "bottle",
+   "stock": 9,
+   "reorder": 12,
+   "price": 45,
+   "cost": 24.75,
+   "batch": "MN2506",
+   "exp": "2027-09-05",
+   "base": "sesame",
+   "use": "both"
+  },
+  {
+   "id": "m3",
+   "name": "Murivenna 200ml",
+   "form": "thailam",
+   "unit": "bottle",
+   "stock": 18,
+   "reorder": 10,
+   "price": 32,
+   "cost": 17.6,
+   "batch": "MV2509",
+   "exp": "2027-10-15",
+   "base": "coconut",
+   "use": "both"
+  },
+  {
+   "id": "m4",
+   "name": "Ksheerabala Thailam 10ml",
+   "form": "thailam",
+   "unit": "bottle",
+   "stock": 40,
+   "reorder": 20,
+   "price": 28,
+   "cost": 15.4,
+   "batch": "KB2510",
+   "exp": "2027-01-06",
+   "base": "sesame",
+   "use": "dispense"
+  },
+  {
+   "id": "m5",
+   "name": "Rasnadi Kashayam 200ml",
+   "form": "kashayam",
+   "unit": "bottle",
+   "stock": 34,
+   "reorder": 20,
+   "price": 24,
+   "cost": 13.2,
+   "batch": "RK2507",
+   "exp": "2027-12-04",
+   "use": "dispense"
+  },
+  {
+   "id": "m6",
+   "name": "Gandharvahastadi Kashayam 200ml",
+   "form": "kashayam",
+   "unit": "bottle",
+   "stock": 12,
+   "reorder": 20,
+   "price": 24,
+   "cost": 13.2,
+   "batch": "GK2505",
+   "exp": "2027-08-06",
+   "use": "dispense"
+  },
+  {
+   "id": "m7",
+   "name": "Ashwagandharishtam 450ml",
+   "form": "arishtam",
+   "unit": "bottle",
+   "stock": 21,
+   "reorder": 12,
+   "price": 42,
+   "cost": 23.1,
+   "batch": "AA2504",
+   "exp": "2028-04-22",
+   "contra": [
+    "pregnancy"
+   ],
+   "use": "dispense"
+  },
+  {
+   "id": "m8",
+   "name": "Dashamoolarishtam 450ml",
+   "form": "arishtam",
+   "unit": "bottle",
+   "stock": 16,
+   "reorder": 12,
+   "price": 40,
+   "cost": 22,
+   "batch": "DA2508",
+   "exp": "2026-12-24",
+   "use": "dispense"
+  },
+  {
+   "id": "m9",
+   "name": "Triphala Choornam 100g",
+   "form": "choornam",
+   "unit": "pack",
+   "stock": 44,
+   "reorder": 20,
+   "price": 18,
+   "cost": 9.9,
+   "batch": "TC2511",
+   "exp": "2028-02-12",
+   "contra": [
+    "pregnancy"
+   ],
+   "use": "dispense"
+  },
+  {
+   "id": "m10",
+   "name": "Chyavanaprasham 500g",
+   "form": "lehyam",
+   "unit": "jar",
+   "stock": 15,
+   "reorder": 10,
+   "price": 55,
+   "cost": 30.25,
+   "batch": "CP2509",
+   "exp": "2027-09-15",
+   "sugar": true,
+   "use": "dispense"
+  },
+  {
+   "id": "m11",
+   "name": "Yogaraja Guggulu (100 tabs)",
+   "form": "gulika",
+   "unit": "bottle",
+   "stock": 8,
+   "reorder": 10,
+   "price": 36,
+   "cost": 19.8,
+   "batch": "YG2506",
+   "exp": "2027-06-07",
+   "use": "dispense"
+  },
+  {
+   "id": "m12",
+   "name": "Kottamchukkadi Thailam 200ml",
+   "form": "thailam",
+   "unit": "bottle",
+   "stock": 11,
+   "reorder": 8,
+   "price": 34,
+   "cost": 18.7,
+   "batch": "KT2507",
+   "exp": "2027-11-14",
+   "base": "sesame",
+   "use": "therapy"
+  }
+ ]
+}

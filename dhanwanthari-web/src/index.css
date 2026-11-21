@@ -1,0 +1,26 @@
+@import "tailwindcss";
+/* LeviNova bright theme (shadcn-style CSS variables) + Dhanwanthari green/gold as client accents */
+:root{
+  --background:#f7f8fc;--foreground:#12132e;--card:#ffffff;--card-foreground:#12132e;--popover:#ffffff;--popover-foreground:#12132e;
+  --primary:#5b2ef0;--primary-foreground:#ffffff;--secondary:#f4f5fb;--secondary-foreground:#12132e;--muted:#f4f5fb;--muted-foreground:#5d6080;
+  --accent:#efeafe;--accent-foreground:#4a1bea;--destructive:#dc2626;--border:#e3e5f0;--input:#e3e5f0;--ring:#5b2ef0;--radius:0.875rem;
+  --herb:#1f7a3f;--herb-soft:#e5f3ea;--gold:#b8860b;--gold-soft:#fbf3dc;--ok:#12a86b;--warn:#d97706;--cyan:#00a6d6;
+}
+@theme inline{
+  --color-background:var(--background);--color-foreground:var(--foreground);--color-card:var(--card);--color-card-foreground:var(--card-foreground);
+  --color-popover:var(--popover);--color-popover-foreground:var(--popover-foreground);--color-primary:var(--primary);--color-primary-foreground:var(--primary-foreground);
+  --color-secondary:var(--secondary);--color-secondary-foreground:var(--secondary-foreground);--color-muted:var(--muted);--color-muted-foreground:var(--muted-foreground);
+  --color-accent:var(--accent);--color-accent-foreground:var(--accent-foreground);--color-destructive:var(--destructive);--color-border:var(--border);
+  --color-input:var(--input);--color-ring:var(--ring);--color-herb:var(--herb);--color-herb-soft:var(--herb-soft);--color-gold:var(--gold);--color-gold-soft:var(--gold-soft);
+  --color-ok:var(--ok);--color-warn:var(--warn);--color-cyan:var(--cyan);
+  --radius-sm:calc(var(--radius) - 6px);--radius-md:calc(var(--radius) - 3px);--radius-lg:var(--radius);--radius-xl:calc(var(--radius) + 4px);
+  --font-sans:Inter,system-ui,sans-serif;--font-display:"Space Grotesk",Inter,sans-serif;
+}
+@layer base{*{@apply border-border outline-ring/50}body{@apply bg-background text-foreground font-sans antialiased}h1,h2,h3{@apply font-display tracking-tight}}
+.ln-grad{background:linear-gradient(135deg,#4a1bea 0%,#6a4cf0 45%,#00b4e6 100%)}
+.ln-grad-text{background:linear-gradient(90deg,#4a1bea,#00b4e6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ln-shadow{box-shadow:0 1px 2px rgba(18,19,46,.04),0 4px 16px rgba(18,19,46,.05)}
+@font-face{font-family:Inter;src:url(./assets/fonts/inter-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Inter;src:url(./assets/fonts/inter-latin-500-normal.woff2) format("woff2");font-weight:500 600;font-display:swap}
+@font-face{font-family:Inter;src:url(./assets/fonts/inter-latin-700-normal.woff2) format("woff2");font-weight:700 800;font-display:swap}
+@font-face{font-family:"Space Grotesk";src:url(./assets/fonts/SpaceGrotesk.ttf) format("truetype");font-weight:300 700;font-display:swap}

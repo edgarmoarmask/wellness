@@ -1,0 +1,40 @@
+# ---- secrets & local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- clinic data (patients, money): never in git. Back it up instead (see README)
+data/
+dhanwanthari-server/data/
+*.db
+*.db-wal
+*.db-shm
+backups/
+
+# ---- Python (dhanwanthari-server)
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# ---- web app (dhanwanthari-web)
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# built web app copied into the server (made by scripts/build-web.sh or the Docker build)
+dhanwanthari-server/frontend/
+
+# ---- tooling / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+npm-debug.log*
