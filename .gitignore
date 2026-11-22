@@ -6,7 +6,7 @@
 *.key
 
 # ---- clinic data (patients, money): never in git. Back it up instead (see README)
-data/
+
 dhanwanthari-server/data/
 *.db
 *.db-wal
