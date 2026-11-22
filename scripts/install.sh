@@ -44,6 +44,7 @@ fi
 rm -rf "${WEB_ROOT:?}"/*
 cp -r "$BUILD_DIR"/. "$WEB_ROOT"/
 chown -R "$APP_USER:$APP_USER" "$WEB_ROOT"
+chown -R "$APP_USER:$APP_USER" "$REPO_DIR/dhanwanthari-server/"
 
 # ---------- 3. nginx ----------
 cat > /etc/nginx/nginx.conf <<'CONF'
