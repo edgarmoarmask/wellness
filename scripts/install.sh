@@ -23,13 +23,6 @@ mkdir -p "$REPO_DIR" "$WEB_ROOT"
 chown "$APP_USER:$APP_USER" "$REPO_DIR" "$WEB_ROOT"
 chmod 755 /home "$WEB_ROOT"
 
-sudo -u "$APP_USER" -H env REPO_URL="$REPO_URL" REPO_DIR="$REPO_DIR" VITE_API_URL="$API_URL" bash -euo pipefail <<'USER_STEPS'
-if [ -d "$REPO_DIR/.git" ]; then
-  git -C "$REPO_DIR" pull
-else
-  git clone "$REPO_URL" "$REPO_DIR"
-fi
-
 cd "$REPO_DIR/dhanwanthari-server"
 uv sync
 chmod +x scripts/prestart.sh
@@ -39,7 +32,7 @@ cp .env.example .env
 cd ../dhanwanthari-web
 bun install
 bun run build
-USER_STEPS
+
 
 # ---------- 2. Publish frontend build to nginx web root ----------
 if [ -d "$REPO_DIR/dhanwanthari-web/dist" ]; then
